@@ -1303,6 +1303,7 @@ a.basic-btn {
   box-shadow: 0px 4px 60px rgba(66, 116, 192, 0.2);
   display: block;
   margin: 0 auto 1.4375vw;
+  border-radius: 0.625vw;
 }
 .services__list__item span {
   display: block;
@@ -1323,6 +1324,7 @@ a.basic-btn {
     width: 16.6666666667vw;
     height: 16.6666666667vw;
     margin: 0 8.6111111111vw 0 0;
+    border-radius: 2.7777777778vw;
   }
   .services__list__item span {
     text-align: left;
@@ -1400,7 +1402,7 @@ a.basic-btn {
   box-sizing: border-box;
 }
 .results__item.results__item-1 {
-  background-image: url("../images/result-item1.png");
+  background-image: url("../images/results-item1.png");
 }
 .results__item.results__item-2 {
   background-image: url("../images/results-item2.png");
@@ -2308,6 +2310,7 @@ a.basic-btn {
   opacity: 0;
   visibility: hidden;
   transition: 0.4s ease-out;
+  display: flex;
 }
 .overlay.active {
   z-index: 2;
@@ -2319,10 +2322,8 @@ a.basic-btn {
 .popup {
   border-radius: 1.25vw;
   background-color: #fff;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+  position: relative;
 }
 @media (max-width: 500px) {
   .popup {
@@ -2341,7 +2342,7 @@ a.basic-btn {
     width: 100%;
     max-width: 96vw;
     height: unset;
-    padding: 11.1111111111vw 8.3333333333vw;
+    padding: 9.7222222222vw 8.3333333333vw 6.9444444444vw;
   }
 }
 
@@ -2384,7 +2385,7 @@ a.basic-btn {
 
 .popup-timer__pic {
   position: absolute;
-  bottom: -0.1875vw;
+  bottom: -0.25vw;
   left: 0;
   width: 25vw;
   pointer-events: none;
@@ -2442,6 +2443,7 @@ a.basic-btn {
 
 .popup-basic {
   padding: 2.5vw 3.75vw;
+  max-width: 95vw;
 }
 
 .popup-basic__title {
