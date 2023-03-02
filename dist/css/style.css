@@ -215,6 +215,7 @@ a.basic-btn {
   left: 0;
   width: 100%;
   padding: 0 13.75vw;
+  z-index: 3;
 }
 .get-free-access img {
   width: 6.125vw;
@@ -2539,8 +2540,8 @@ a.basic-btn {
 }
 @media (max-width: 500px) {
   .popup__close {
-    top: 4.4444444444vw;
-    right: 4.4444444444vw;
+    top: 3.6111111111vw;
+    right: 3.6111111111vw;
   }
   .popup__close img {
     width: 6.6666666667vw;
