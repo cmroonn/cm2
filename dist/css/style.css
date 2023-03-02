@@ -145,7 +145,7 @@ button {
 .cookie {
   padding: 0.9375vw 1.1875vw 0.9375vw 2.375vw;
   position: fixed;
-  bottom: 1.875vw;
+  bottom: 6.5625vw;
   left: 3.125vw;
   background-color: #CEDFF2;
   display: flex;
@@ -182,7 +182,7 @@ button {
     padding: 2.7777777778vw 3.6111111111vw 2.7777777778vw 5.5555555556vw;
     border-radius: 2.7777777778vw;
     left: 5.5555555556vw;
-    bottom: 5.5555555556vw;
+    bottom: 30.5555555556vw;
   }
   .cookie p, .cookie a {
     font-size: 3.8888888889vw;
@@ -204,6 +204,59 @@ a.basic-btn {
 
 .open-basic-popup {
   cursor: pointer;
+}
+
+.get-free-access {
+  background-color: #2473EB;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 13.75vw;
+}
+.get-free-access img {
+  width: 6.125vw;
+  height: 6.25vw;
+}
+.get-free-access p {
+  font-size: 1.75vw;
+  margin: 0 0 0 1.125vw;
+  color: #fff;
+  font-weight: 700;
+  max-width: 33.125vw;
+}
+.get-free-access button {
+  background-color: #fff;
+  color: #2473EB;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1vw;
+  width: 13.75vw;
+  height: 3.75vw;
+  margin-left: auto;
+  display: block;
+  border-radius: 0.625vw;
+}
+.get-free-access .get-free-access__mob {
+  display: none;
+}
+@media (max-width: 500px) {
+  .get-free-access {
+    color: #2473EB;
+    padding: 5.5555555556vw 5.9722222222vw;
+  }
+  .get-free-access button, .get-free-access img, .get-free-access p {
+    display: none;
+  }
+  .get-free-access .get-free-access__mob {
+    display: block;
+    width: 100%;
+    height: 16.6666666667vw;
+    font-size: 4.4444444444vw;
+    border-radius: 2.7777777778vw;
+  }
 }
 
 .welcome {
@@ -2174,12 +2227,12 @@ a.basic-btn {
 
 .footer {
   background-color: #00030B;
-  padding: 2.25vw 0 2.875vw;
+  padding: 2.25vw 0 9.125vw;
   font-size: 1vw;
 }
 @media (max-width: 500px) {
   .footer {
-    padding: 0;
+    padding: 0 0 27.7777777778vw;
   }
 }
 
