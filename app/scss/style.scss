@@ -1,0 +1,25 @@
+$breakpoint: 500px;
+$breakpointtb: 820px;
+
+
+@import "fonts";
+@import "specifications";
+
+@import "sections/welcome";
+@import "sections/course-content";
+@import "sections/useful";
+@import "sections/book";
+@import "sections/lessons";
+@import "sections/get-access";
+@import "sections/services";
+@import "sections/results";
+@import "sections/demand";
+@import "sections/format";
+@import "sections/facts";
+@import "sections/school";
+
+@import "sections/footer";
+
+@import "sections/not-found";
+
+@import "popup";

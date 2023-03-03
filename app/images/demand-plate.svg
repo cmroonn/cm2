@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="-0.399 2.344 498 230.11" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter0_d_211_657" x="0" y="0" width="618" height="350.11" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="30"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.147985 0 0 0 0 0.370833 0 0 0 0.05 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_211_657"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_211_657" result="shape"/>
+    </filter>
+  </defs>
+  <g filter="url(#filter0_d_211_657)" transform="matrix(1, 0, 0, 1, -60.399403, -53.656395)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M108 56C96.9543 56 88 64.9543 88 76V219.5C88 265.9 77 282 60 286C74.8961 286.698 85.4584 284.038 92.6955 278.876C96.3642 283.232 101.859 286 108 286H538C549.046 286 558 277.046 558 266V76C558 64.9543 549.046 56 538 56H108Z" fill="#0061F4"/>
+  </g>
+</svg>
