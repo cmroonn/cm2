@@ -143,17 +143,17 @@ button {
 }
 
 .cookie {
-  padding: 0.9375vw 1.1875vw 0.9375vw 2.375vw;
+  padding: 0.875vw 1.75vw 0.75vw 2.25vw;
   position: fixed;
   bottom: 6.5625vw;
   left: 3.125vw;
   background-color: #CEDFF2;
   display: flex;
   align-items: center;
-  max-width: 28.125vw;
+  max-width: 23.5625vw;
   width: 100%;
   justify-content: space-between;
-  border-radius: 1.25vw;
+  border-radius: 0.625vw;
   z-index: 2;
 }
 .cookie p, .cookie a {
@@ -167,30 +167,30 @@ button {
   font-weight: 700;
 }
 .cookie button {
-  width: 10.125vw;
-  height: 2.75vw;
+  width: 6.5vw;
+  height: 1.875vw;
   background-color: #2473EB;
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
   font-size: 1vw;
-  border-radius: 0.625vw;
+  border-radius: 0.3125vw;
 }
 @media (max-width: 500px) {
   .cookie {
     max-width: 88.8888888889vw;
-    padding: 2.7777777778vw 3.6111111111vw 2.7777777778vw 5.5555555556vw;
+    padding: 2.7777777778vw 5.5555555556vw 2.7777777778vw;
     border-radius: 2.7777777778vw;
     left: 5.5555555556vw;
-    bottom: 30.5555555556vw;
+    bottom: 27.7777777778vw;
   }
   .cookie p, .cookie a {
-    font-size: 3.8888888889vw;
+    font-size: 3.3333333333vw;
   }
   .cookie button {
     font-size: 3.8888888889vw;
     width: 33.3333333333vw;
-    height: 11.1111111111vw;
+    height: 8.3333333333vw;
     border-radius: 1.3888888889vw;
   }
 }
@@ -214,19 +214,19 @@ a.basic-btn {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 0 13.75vw;
+  padding: 0.3125vw 13.75vw 0.25vw;
   z-index: 3;
 }
 .get-free-access img {
-  width: 6.125vw;
-  height: 6.25vw;
+  width: 4.34875vw;
+  height: 4.4375vw;
 }
 .get-free-access p {
-  font-size: 1.75vw;
-  margin: 0 0 0 1.125vw;
+  font-size: 1.625vw;
+  margin: 0 0 0 0.9375vw;
   color: #fff;
   font-weight: 700;
-  max-width: 33.125vw;
+  max-width: 30.6875vw;
 }
 .get-free-access button {
   background-color: #fff;
@@ -235,7 +235,7 @@ a.basic-btn {
   font-weight: 700;
   font-size: 1vw;
   width: 13.75vw;
-  height: 3.75vw;
+  height: 3.125vw;
   margin-left: auto;
   display: block;
   border-radius: 0.625vw;
@@ -246,7 +246,7 @@ a.basic-btn {
 @media (max-width: 500px) {
   .get-free-access {
     color: #2473EB;
-    padding: 5.5555555556vw 5.9722222222vw;
+    padding: 4.1666666667vw 5.9722222222vw;
   }
   .get-free-access button, .get-free-access img, .get-free-access p {
     display: none;
@@ -254,7 +254,7 @@ a.basic-btn {
   .get-free-access .get-free-access__mob {
     display: block;
     width: 100%;
-    height: 16.6666666667vw;
+    height: 13.8888888889vw;
     font-size: 4.4444444444vw;
     border-radius: 2.7777777778vw;
   }
@@ -2228,12 +2228,12 @@ a.basic-btn {
 
 .footer {
   background-color: #00030B;
-  padding: 2.25vw 0 9.125vw;
+  padding: 2.25vw 0 6.25vw;
   font-size: 1vw;
 }
 @media (max-width: 500px) {
   .footer {
-    padding: 0 0 27.7777777778vw;
+    padding: 0 0 25vw;
   }
 }
 
@@ -2365,9 +2365,11 @@ a.basic-btn {
   visibility: hidden;
   transition: 0.4s ease-out;
   display: flex;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .overlay.active {
-  z-index: 2;
+  z-index: 4;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.4s ease;
