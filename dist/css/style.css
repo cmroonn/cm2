@@ -588,6 +588,7 @@ a.basic-btn {
   background-color: #F5265C;
   border: none;
   font-size: 1vw;
+  transition: 0.5s ease;
 }
 @media (max-width: 500px) {
   .welcome__offer__guide__btn {
@@ -597,6 +598,10 @@ a.basic-btn {
     border-radius: 2.7777777778vw;
     margin: 0 auto;
   }
+}
+.welcome__offer__guide__btn:hover {
+  transition: 0.5s ease;
+  background-color: #ff4f7b;
 }
 
 .course-content {
