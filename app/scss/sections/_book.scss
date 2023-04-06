@@ -145,3 +145,114 @@
   }
 }
 
+
+.book2 {
+
+
+  .book__picture {
+    width: calc(275 / 1600 * 100vw);
+    height: calc(430 / 1600 * 100vw);
+    margin-left: calc(-70 / 1600 * 100vw);
+    padding-top: 0;
+  }
+
+  .book__content__text {
+    padding: calc(60 / 1600 * 100vw) 0;
+  }
+
+  .book__content__text__title {
+    margin-bottom: calc(20 / 1600 * 100vw);
+    span {
+      margin-bottom: calc(5 / 1600  *100vw);
+    }
+  }
+
+  .book__content__text__description {
+    font-size: calc(24 / 1600 * 100vw);
+  }
+
+  .book__content__get {
+    box-shadow: 0px 4px 60px rgba(18, 80, 174, 0.1);
+  }
+
+  @media (max-width: 500px) {
+    padding-top: calc(45 / 360 * 100vw);
+    padding-bottom: calc(52 / 360 * 100vw);
+    .book__content__text__title {
+      span {
+        font-size: calc(18 / 360 * 100vw);
+        margin-bottom: calc(5 / 360  * 100vw);
+      }
+    }
+
+    .book__content__text__description {
+      font-size: calc(16 / 360 * 100vw);
+      margin-top: calc(20 / 360 * 100vw);
+    }
+
+    .book__picture {
+      width: calc(196 / 360 * 100vw);
+      height: calc(310 / 360 * 100vw);
+      bottom: calc(260 / 360 * 100vw);
+      left: 54%;
+    }
+
+    .book__content__get {
+      margin-top: calc(310 / 360 * 100vw);
+    }
+  }
+}
+
+.book__tags {
+  margin-top: calc(35 / 1600 * 100vw);
+
+  p {
+    font-size: calc(18 / 1600 * 100vw);
+    font-weight: 700;
+    color: #2E72DB;
+    margin-bottom: calc(15 / 1600 * 100vw);
+  }
+
+  @media (max-width: 500px) {
+    p {
+      font-size: calc(16 / 360 * 100vw);
+      margin-bottom: calc(10 / 360 * 100vw);
+    }
+  }
+}
+
+.book__tags__contents {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc(510 / 1600 * 100vw);
+  span {
+    font-size: calc(14 / 1600 * 100vw);
+    padding: calc(5 / 1600 * 100vw) calc(11 / 1600 * 100vw);
+    background-color: #2E72DB;
+    color: #fff;
+    margin-right: calc(10 / 1600 * 100vw);
+    margin-bottom: calc(10 / 1600 * 100vw);
+    border-top-left-radius: calc(5 / 1600 * 100vw);
+    border-top-right-radius: calc(5 / 1600 * 100vw);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    max-width: unset;
+    justify-content: center;
+
+    span {
+      border-top-left-radius: calc(7 / 360 * 100vw);
+      border-top-right-radius: calc(7 / 360 * 100vw);
+      font-size: calc(12 / 360 * 100vw);
+      padding: calc(5 / 360 * 100vw) calc(11 / 360 * 100vw);
+      margin-right: calc(2 / 360 * 100vw);
+      margin-bottom: calc(5 / 360 * 100vw);
+
+
+    }
+  }
+}

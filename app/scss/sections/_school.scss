@@ -6,6 +6,10 @@
     padding: calc(94 / 360 * 100vw) 0 calc(60 / 360 * 100vw);
     font-size: calc(16 / 360 * 100vw);
   }
+
+  &.school2 {
+    padding-top: calc(40 / 1600 * 100vw);
+  }
 }
 
 .school__title {

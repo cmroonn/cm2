@@ -112,3 +112,28 @@
     }
   }
 }
+
+
+.get-access-3 {
+  .get-access__heading {
+    font-weight: 400;
+    max-width: calc(670 / 1600 * 100vw);
+    font-size: calc(28 / 1600 * 100vw);
+  }
+
+  @media (max-width: 500px) {
+    .get-access__heading {
+      font-size: calc(18 / 360 * 100vw);
+      max-width: unset;
+    }
+
+    .get-access__wrapper {
+      justify-content: center;
+      text-align: center;
+
+      img {
+        margin-bottom: calc(10 / 360 * 100vw);
+      }
+    }
+  }
+}

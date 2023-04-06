@@ -230,6 +230,12 @@ a.basic-btn {
   padding: calc(5 / 1600 * 100vw) calc(220 / 1600 * 100vw) calc(4 / 1600 * 100vw);
   z-index: 3;
 
+  &.get-free-access-2 {
+    p {
+      max-width: calc(570 / 1600 * 100vw);
+    }
+  }
+
 
   img {
     width: calc(69.58 / 1600 * 100vw);

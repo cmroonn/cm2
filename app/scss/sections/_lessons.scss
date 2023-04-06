@@ -232,3 +232,54 @@
     }
   }
 }
+
+
+.lessons2 {
+  margin-top: calc(150 / 1600 * 100vw);
+  .lessons__title {
+    max-width: unset;
+  }
+
+  .lessons__lesson__title {
+    span {
+      max-width: calc(480 / 1600 * 100vw);
+    }
+  }
+  .lessons__lesson__topics__list {
+    height: calc(150 / 1600  * 100vw);
+    overflow: hidden;
+
+    &.active {
+      height: 100%;
+    }
+  }
+
+  .lessons__lesson__body {
+    align-items: flex-start;
+  }
+
+  @media (max-width: 500px) {
+    .lessons__lesson__title {
+      span {
+        max-width: unset;
+      }
+    }
+
+    .lessons__lesson__topics__list {
+      height: auto;
+    }
+  }
+}
+
+.lessons__lesson__topics__toggle {
+  color: #0061F4;
+  border-bottom: 1px solid #0061F4;
+  padding-bottom: 1px;
+  margin-top: calc(22 / 1600 * 100vw);
+  font-size: calc(16 / 1600 * 100vw);
+  background: none;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}

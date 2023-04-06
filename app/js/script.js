@@ -3,10 +3,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const popupTimeout = setTimeout(openPopup, 30000, 'popupTimer');
+    clearTimeout(popupTimeout);
 
 
     let isOpenPopup = false;
-    // const main = document.getElementById('main');
+    const main = document.getElementById('main');
     // main.addEventListener('click', function(e) {
     //     const target = e.target;
     //     console.log(target);
@@ -59,6 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         let arr = []
 
+        console.log(fields);
+
 
         fields.forEach(field => {
             if (!field.value || field.value === "") {
@@ -72,7 +75,11 @@ document.addEventListener("DOMContentLoaded", () => {
             arr.push(true);
         })
 
-        if (arr.find(el => el === false)) return false;
+        if (arr.find(el => el === false) === false) return false;
+
+        console.log('ookkk');
+
+        return true;
     }
 
 
@@ -95,35 +102,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    const cookiePlate = document.getElementById("cookie-plate");
-    const cookieBtn = document.getElementById("cookieBtn");
-    cookieBtn.addEventListener("click", function () {
-        cookiePlate.remove();
+    try {
+        const cookiePlate = document.getElementById("cookie-plate");
+        const cookieBtn = document.getElementById("cookieBtn");
+        cookieBtn.addEventListener("click", function () {
+            cookiePlate.remove();
+        })
+    } catch(e) {
+        console.log(e);
+    }
+
+
+
+    // const basicForm = document.getElementById('basicForm');
+    const forms = document.querySelectorAll('.form-submit');
+    console.log(forms);
+
+    forms.forEach(form => {
+        form.addEventListener("submit", function (e) {
+
+            if (!validate(form)) {
+                e.preventDefault();
+                return;
+            }
+            console.log('ok')
+        })
     })
 
 
 
-    const basicForm = document.getElementById('basicForm');
-
-    basicForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        validate(basicForm);
-
-        if (!validate(basicForm)) return;
-        console.log('ok')
-    })
-
-
-    const timerForm = document.getElementById("timerForm");
-
-
-    timerForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        validate(basicForm);
-
-        if (!validate(timerForm)) return;
-        console.log('ok')
-    })
+    //
+    // const timerForm = document.getElementById("timerForm");
+    //
+    //
+    // timerForm.addEventListener("submit", function (e) {
+    //     console.log('as')
+    //     if (!validate(timerForm)) {
+    //         e.preventDefault();
+    //         return;
+    //     }
+    //     console.log('ok')
+    // })
 
 
     const closePopupButtons = document.querySelectorAll(".popup__close");
@@ -134,6 +153,27 @@ document.addEventListener("DOMContentLoaded", () => {
             closePopup(parent.id);
         })
     })
+
+    try {
+        const blocks = document.querySelectorAll('.lessons__lesson__topics__list');
+        const toggles = document.querySelectorAll('.lessons__lesson__topics__toggle');
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const parent = toggle.closest('.lessons__lesson__body__topics');
+                const block = parent.querySelector(".lessons__lesson__topics__list");
+
+                if (toggle.innerText === 'Свернуть список') {
+                    toggle.innerText ='Показать все темы урока';
+                } else {
+                    toggle.innerText = 'Свернуть список';
+                }
+                block.classList.toggle("active");
+            })
+        })
+    } catch (e) {
+        console.log(e);
+    }
 
 
 
