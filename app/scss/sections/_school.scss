@@ -158,3 +158,35 @@
     margin-left: 0;
   }
 }
+
+
+.school__invite-2 {
+  padding-left: calc(74 / 1600 * 100vw);
+  max-width: 100%;
+
+  .school__invite__img {
+    width: calc(100 / 1600 * 100vw);
+    height: calc(100 / 1600 * 100vw);
+  }
+
+  .school__invite__link {
+    font-size: calc(36 / 1600 * 100vw);
+    color: #0061F4;
+    line-height: 130%;
+  }
+
+
+  @media (max-width: 500px) {
+    padding: calc(14 / 360 * 100vw) calc(33 / 360 * 100vw) calc(23 / 360 * 100vw);
+    .school__invite__img {
+      transform: rotate(0);
+      width: calc(45 / 360 * 100vw);
+      height: calc(45 / 360 * 100vw);
+      margin-bottom: calc(5 / 360 * 100vw);
+    }
+
+    .school__invite__link {
+      font-size: calc(16 / 360 * 100vw);
+    }
+  }
+}

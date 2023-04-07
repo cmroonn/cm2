@@ -40,7 +40,7 @@
 
   @media (max-width: $breakpoint) {
     width: calc(260 / 360 * 100vw);
-    padding: calc(30 / 360 * 100vw) calc(19 / 360 * 100vw) calc(15 / 360 * 100vw) calc(30 / 360 * 100vw);
+    padding: calc(30 / 360 * 100vw) calc(21 / 360 * 100vw) calc(15 / 360 * 100vw) calc(25 / 360 * 100vw);
     min-height: calc(260 / 360 * 100vw);
     border-radius: calc(20 / 360 * 100vw);
     margin-bottom: calc(40 / 360 * 100vw);
@@ -107,9 +107,12 @@
   font-size: calc(20 / 1600 * 100vw);
   margin: calc(13 / 1600 * 100vw) 0 calc(15 / 1600 * 100vw);
 
+
   @media (max-width: 500px) {
     font-size: calc(16 / 360 * 100vw);
     margin: calc(30 / 360 * 100vw) 0 calc(15 / 360 * 100vw);
+    max-width: calc(138 / 360 * 100vw);
+
   }
 }
 .facts__card-bonus {

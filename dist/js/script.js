@@ -2,7 +2,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   var popupTimeout = setTimeout(openPopup, 30000, 'popupTimer');
-  clearTimeout(popupTimeout);
   var isOpenPopup = false;
   var main = document.getElementById('main');
   // main.addEventListener('click', function(e) {

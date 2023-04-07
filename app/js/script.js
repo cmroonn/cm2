@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const popupTimeout = setTimeout(openPopup, 30000, 'popupTimer');
-    clearTimeout(popupTimeout);
+
 
 
     let isOpenPopup = false;

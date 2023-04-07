@@ -231,8 +231,15 @@ a.basic-btn {
   z-index: 3;
 
   &.get-free-access-2 {
+    padding-top: calc(5 / 1600 * 100vw);
+    padding-bottom: calc(5 / 1600 * 100vw);
     p {
       max-width: calc(570 / 1600 * 100vw);
+    }
+
+    img {
+      width: calc(60 / 1600 * 100vw);
+      height: calc(60 / 1600 * 100vw);
     }
   }
 
@@ -281,6 +288,13 @@ a.basic-btn {
       font-size: calc(16 / 360 * 100vw);
       border-radius: calc(10 / 360 * 100vw);
     }
+
+    &.get-free-access-2 {
+      padding: calc(15 / 360 * 100vw) calc(21.5 / 360 * 100vw);
+    }
+
+
+
   }
 }
 

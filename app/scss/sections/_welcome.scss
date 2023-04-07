@@ -355,6 +355,7 @@
 
 .welcome__offer__title-2 {
   font-size: calc(76 / 1600 * 100vw);
+  line-height: 100%;
 
   span {
     font-size: calc(50 / 1600 * 100vw);
@@ -384,9 +385,9 @@
 }
 .welcome__man2 {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  top: 0;
+  height: 100%;
+  width: 100%;
+  bottom: -1px;
   left: 0;
   height: 100%;
   @media (max-width: 500px) {
