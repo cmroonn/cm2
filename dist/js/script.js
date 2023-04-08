@@ -104,6 +104,18 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log('ok');
     });
   });
+  try {
+    var _buttons = document.querySelectorAll(".open-timer-popup");
+    _buttons.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openPopup('popupTimer');
+      });
+    });
+  } catch (e) {
+    console.log(e);
+  }
 
   //
   // const timerForm = document.getElementById("timerForm");

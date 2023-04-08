@@ -621,7 +621,7 @@ a.basic-btn {
 
 .welcome__offer__title-2 {
   font-size: 4.75vw;
-  line-height: 100%;
+  line-height: 85%;
 }
 .welcome__offer__title-2 span {
   font-size: 3.125vw;
@@ -630,11 +630,12 @@ a.basic-btn {
   margin-left: 0;
   right: -3.125vw;
   transform: rotate(3.76deg);
-  top: 1.125vw;
+  top: 0.3125vw;
 }
 @media (max-width: 500px) {
   .welcome__offer__title-2 {
     font-size: 12.7777777778vw;
+    line-height: 100%;
   }
   .welcome__offer__title-2 span {
     font-size: 11.1111111111vw;

@@ -129,6 +129,19 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
+    try {
+        const buttons = document.querySelectorAll(".open-timer-popup");
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                openPopup('popupTimer');
+            })
+        })
+    } catch(e) {
+        console.log(e);
+    }
 
 
     //

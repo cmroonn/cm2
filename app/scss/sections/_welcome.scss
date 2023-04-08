@@ -355,7 +355,7 @@
 
 .welcome__offer__title-2 {
   font-size: calc(76 / 1600 * 100vw);
-  line-height: 100%;
+  line-height: 85%;
 
   span {
     font-size: calc(50 / 1600 * 100vw);
@@ -364,11 +364,12 @@
     margin-left: 0;
     right: calc(-50 / 1600 * 100vw);
     transform: rotate(3.76deg);
-    top: calc(18 / 1600 * 100vw);
+    top: calc(5 / 1600 * 100vw);
   }
 
   @media (max-width: $breakpoint) {
     font-size: calc(46 / 360 * 100vw);
+    line-height: 100%;
     span {
       font-size: calc(40 / 360 * 100vw);
     }
