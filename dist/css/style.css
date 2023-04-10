@@ -2934,7 +2934,7 @@ a.basic-btn {
 }
 
 .stats__content {
-  height: 19.375vw;
+  height: 16.625vw;
   position: relative;
   padding: 0 1.0625vw;
 }
@@ -2987,7 +2987,7 @@ a.basic-btn {
 
 .stats__item-2 {
   left: 24.25vw;
-  top: 1.375vw;
+  top: 0vw;
   background-color: #F5265C;
   width: 24.0625vw;
   z-index: 1;
@@ -3011,7 +3011,7 @@ a.basic-btn {
 }
 
 .stats__item-3 {
-  top: 1.375vw;
+  top: 0vw;
   right: 1.25vw;
   left: unset;
   background: white;
@@ -3037,7 +3037,7 @@ a.basic-btn {
 }
 
 .stats__item-4 {
-  bottom: 1.375vw;
+  bottom: 0vw;
   top: unset;
   left: 6.125vw;
   background-color: #70A6F8;
